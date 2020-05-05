@@ -1,2 +1,2 @@
 # 2nd-milestone-project
-this is my second molestone project
+this is my second milestone project
