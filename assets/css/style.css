@@ -1,42 +1,72 @@
-*,html,body {
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@500&family=Open+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: black;
+}
+
+li, a, button {
+    font-family: 'Expletus Sans', cursive;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
 }
 
 header {
-    background-color: darkturquoise;
-    height: 112px;
-    line-height: 112px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
 }
 
 .logo {
-    float: left;
+    cursor: pointer;
+    order: 3;
+    margin-left: auto;
 }
 
-.logo img {
-    margin-top: 0;
+nav {
+    order: 1;
 }
 
-ul {
+.nav_links {
     list-style: none;
 }
 
-ul li {
+.nav_links li {
     display: inline-block;
+    padding: 0px 20px;
 }
 
-header nav {
-    padding-left: 100px;
+.nav_links li:nth-child(1) {
+    padding: 0 20px 0 0;
 }
 
-header nav ul li a  {
-    padding-right: 30px;
-    font-weight: bold;
-    color: white;
-    transition: all 0.5s ease-in;
+.nav_links li a {
+    transition: all 0.3s ease 0s;
 }
 
-header nav ul li a:hover  {
-    text-decoration: none;
-    color: black;
+.nav_links li a:hover {
+    color: #0088a9;
+}
+
+.cta {
+    order: 2;
+}
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 100px 20px;
+    cursor: pointer;
+    transition:  all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color:  rgba(0,136,169,0.8);
 }
